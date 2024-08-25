@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "variant-images"
+client_id = "6f4d8ac5f78bad7053d821e1a4fa49cc"
+application_url = "https://quick-visited-would-laundry.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_products"
+
+[auth]
+redirect_urls = [
+  "https://quick-visited-would-laundry.trycloudflare.com/auth/callback",
+  "https://quick-visited-would-laundry.trycloudflare.com/auth/shopify/callback",
+  "https://quick-visited-would-laundry.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-tsm.myshopify.com"
