@@ -1,7 +1,3 @@
-Here's a README template for your Shopify app:
-
----
-
 # Shopify Variant Image Manager
 
 ## Overview
