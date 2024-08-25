@@ -15,44 +15,22 @@ Here's a README template for your Shopify app:
 - **Intuitive Interface**: User-friendly interface built with the power of Remix and Shopify's Polaris design system.
 - **Seamless Integration**: Works directly within your Shopify admin, ensuring a seamless experience.
 
-## Installation
+## Functionality
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/vivek26anand/variant-images.git
-   ```
+- **Admin block extensions**: This app uses the [Shopify Admin API](https://shopify.dev/docs/admin-api/rest/reference/admin-blocks) to create a custom block extension in the Shopify admin.
 
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd your-repository-name
-   ```
+- **Admin action extensions**: This app uses the [Shopify Admin API](https://shopify.dev/docs/admin-api/rest/reference/admin-actions) to create a custom action extension in the Shopify admin.
 
-3. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+- **GraphQL Admin API**: This app uses the [Shopify Admin API](https://shopify.dev/docs/admin-api/rest/reference) to fetch and update product variant images.
 
-4. **Set Up Environment Variables**:
-   Create a `.env` file in the root directory and add your Shopify API credentials:
-   ```bash
-   SHOPIFY_API_KEY=your_api_key
-   SHOPIFY_API_SECRET=your_api_secret
-   SHOPIFY_SCOPES=write_products,read_products
-   SHOPIFY_SHOP=my-shop-name.myshopify.com
-   ```
+## Quick start
 
-5. **Run the Development Server**:
-   ```bash
-   npm run dev
-   ```
+### Prerequisites
 
-6. **Install the App on Your Shopify Store**:
-   - Open your Shopify admin.
-   - Go to `Apps` > `Manage private apps`.
-   - Create a new private app with the provided API key and secret.
-   - Install the app on your store by following the provided URL.
+1. You must [download and install Node.js](https://nodejs.org/en/download/) if you don't already have it.
+2. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
+3. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
 
-## Usage
+### Configure shopify.app.toml
 
-- **Access the App**: After installation, access the app from your Shopify admin under `Apps > Shopify Variant Image Manager`.
-- **Manage Images**: Select a product and manage its variant images. You can add, remove, or reorder images as needed.
+Update the `name`, `client_id` and `dev_store_url` in the `shopify.app.toml` file with your app's name and API key.
